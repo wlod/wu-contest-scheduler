@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>wu-contest-organizer</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/github.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+
+<div class="app-container">
+
+    <a href="https://github.com/wlod/" class="owner" target="_blank">
+        <div class="owner-container">
+            <div class="owner-github-logo">
+                <img src="assets/github-wlod.png" alt="Wlod on github" />
+            </div>
+            <div class="owner-details">
+                Wlod on github
+            </div>
+        </div>
+    </a>
+
+    <div class="container">
+
+        <div class="scheduler-configurator">
+            <form id="scheduler-configurator-form">
+
+                <label for="tables">Liczba stołów:</label>
+                <select id="tables" name="tables">
+                </select>
+
+                <!-- TODO maybe below sections is not necessary
+                <br />
+                <label for="categories">Liczba kategorii/wydarzeń:</label>
+                <select id="categories" name="categories">
+
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>-->
+
+                <br />
+                <span>Godziny wydarzenia:</span>
+                <label for="datetimeFrom">Od</label>
+                <input type="time" id="datetimeFrom" name="datetimeFrom" step="900">
+
+                <label for="datetimeTo">Do:</label>
+                <input type="time" id="datetimeTo" name="datetimeTo" step="900">
+
+                <div>
+                    <span>Kategoria/krok milowy:</span>
+                    <div id="category">
+                        <label for="name">Nazwa:</label>
+                        <input type="text" id="name" name="name"><br />
+                        <label for="description">Opis:</label>
+                        <input type="text" id="description" name="description"><br />
+                        <label for="color">Kolor:</label>
+                        <input type="color" id="color" name="color" value="#ff0000"><br />
+                        <label for="c1DatetimeFrom">Od</label>
+                        <input type="time" id="c1DatetimeFrom" name="c1DatetimeFrom" step="900">
+                        <label for="c1DatetimeTo">Do:</label>
+                        <input type="time" id="c1DatetimeTo" name="c1DatetimeTo" step="900">
+                        <br />
+                        <label for="c1Tables">Liczba stołów:</label>
+                        <select id="c1Tables" name="tables">
+                        </select>
+                        <br />
+                        <button type="submit" form="category" value="Submit">Dodaj</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <br/>
+            TODO:
+            export/import/localstorage
+            focus wydarzeń po najechaniu/kliknięciu na stół
+            live timer - focus na wiersz w danym czasie
+            SPA w wersji offline
+            genretor stron (css, html, img (do svg) w jednym pliku)
+
+        </div>
+
+        <div class="grid-container" id="scheduler">
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script type="module" src="js/Main.js"></script>
+
+</body>
+</html>

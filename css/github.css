@@ -1,0 +1,31 @@
+.app-container a.owner {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    left: 20px;
+}
+
+.app-container a.owner div.owner-container div.owner-github-logo {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid;
+    color: #333333;
+    width: 50px;
+    float: left;
+}
+
+.app-container a.owner div.owner-container div.owner-github-logo img {
+    width: 50px;
+    border: 0px;
+    vertical-align: middle;
+}
+
+.app-container a.owner div.owner-container div.owner-details {
+    width: 200px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #FFF;
+}
