@@ -43,15 +43,7 @@
                 <br />
                 <label for="categories">Liczba kategorii/wydarzeń:</label>
                 <select id="categories" name="categories">
-
                     <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
                 </select>-->
 
                 <br />
@@ -63,26 +55,7 @@
                 <input type="time" id="datetimeTo" name="datetimeTo" step="900">
 
                 <div>
-                    <span>Kategoria/krok milowy:</span>
-                    <div id="category">
-                        <label for="name">Nazwa:</label>
-                        <input type="text" id="name" name="name"><br />
-                        <label for="description">Opis:</label>
-                        <input type="text" id="description" name="description"><br />
-                        <label for="color">Kolor:</label>
-                        <input type="color" id="color" name="color" value="#ff0000"><br />
-                        <label for="c1DatetimeFrom">Od</label>
-                        <input type="time" id="c1DatetimeFrom" name="c1DatetimeFrom" step="900">
-                        <label for="c1DatetimeTo">Do:</label>
-                        <input type="time" id="c1DatetimeTo" name="c1DatetimeTo" step="900">
-                        <br />
-                        <label for="c1Tables">Liczba stołów:</label>
-                        <select id="c1Tables" name="tables">
-                        </select>
-                        <br />
-                        <button type="submit" form="category" value="Submit">Dodaj</button>
-                    </div>
-
+                    <span>Kategoria/krok milowy:</span>&nbsp;<button type="button" id="addCategory">Dodaj</button>
                 </div>
             </form>
 

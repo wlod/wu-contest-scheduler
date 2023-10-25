@@ -53,3 +53,9 @@ body, h1, h2, h3, h4, h5, h6 {
   background-color: rgba(152,221,252, 0.8);
   color: rgba(0, 0, 0, 1);
 }
+
+.form-category {
+  background-color: rgba(100, 185, 156, 0.8);
+  color: rgba(0, 0, 0, 1);
+
+}
